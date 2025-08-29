@@ -1,0 +1,115 @@
+@import "./reset.css";
+@import "./style.css";
+@import "./utils.css";
+@import "./header.css";
+@import "./cart-aside.css";
+@import "./footer.css";
+
+/* Filter Bar */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+  padding-inline: 4rem;
+}
+
+.filter-bar select {
+  flex: 0 0 100%;
+}
+
+.search-wrapper {
+  font-size: 1.5rem;
+  padding-inline: 4rem;
+  margin-block: 1rem;
+}
+
+.search-wrapper input {
+  line-height: 1.5;
+  padding-inline: 4px;
+  outline: none;
+}
+
+.products-section {
+  margin-block: 2rem;
+}
+
+.products-section .title {
+  display: inline-block;
+  font-size: 3rem;
+  text-align: center;
+  margin-block: 2rem;
+}
+
+.products-section .container {
+  padding-inline: 4rem;
+  text-align: center;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+}
+
+.product {
+  background-color: var(--color-surface);
+  font-size: 1.5rem;
+  padding: 1rem;
+  border: 2px solid var(--color-border);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.product a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.product .img-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.product img {
+  margin-inline: auto;
+  width: 15rem;
+  height: 22rem;
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+
+.product:hover img {
+  scale: 1.2;
+}
+
+.product .rating span:not(:last-child) {
+  margin-inline-end: 0.5rem;
+}
+
+.product .price {
+  font-size: 1.5rem;
+}
+
+.product .controls {
+  margin-block: 1rem;
+}
+
+.product .controls button {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 0.75rem;
+  font-size: 1.3rem;
+  border-radius: 4px;
+  min-width: 9rem;
+}
+
+@media (min-width: 500px) {
+  .filter-bar select {
+    flex: initial;
+  }
+}

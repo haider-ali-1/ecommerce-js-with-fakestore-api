@@ -1,0 +1,13 @@
+@import "./reset.css";
+@import "./style.css";
+@import "./utils.css";
+@import "./cart-aside.css";
+@import "./header.css";
+@import "./footer.css";
+
+main .container > p {
+  display: none;
+  font-size: 2rem;
+  text-align: center;
+  margin-block: 2rem;
+}

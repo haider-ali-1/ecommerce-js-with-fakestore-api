@@ -1,0 +1,71 @@
+@import "./reset.css";
+@import "./style.css";
+@import "./header.css";
+@import "./cart-aside.css";
+@import "./utils.css";
+@import "./footer.css";
+
+.profile-section {
+  margin-block: 2rem;
+}
+
+.profile-container {
+  max-width: 1000px;
+}
+
+.profile-container > div {
+  margin-block: 2rem;
+}
+
+.profile {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.profile button {
+  margin-top: 0.5rem;
+  border-radius: 4px;
+  background-color: var(--color-primary);
+  padding: 0.75rem;
+  color: white;
+}
+
+.orders {
+  font-size: 1.5rem;
+  width: 100%;
+  margin-block: 3rem;
+}
+
+.order {
+  display: flex;
+  gap: 1rem;
+}
+
+.order-header {
+  font-weight: bold;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  min-width: 800px;
+  width: 100%;
+}
+
+table,
+td,
+th {
+  border: 1px solid gray;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 1rem;
+}
+
+table td:not(:nth-child(2)) {
+  text-align: center;
+}

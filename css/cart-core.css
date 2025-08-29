@@ -1,0 +1,79 @@
+main .cart {
+  font-size: 1.5rem;
+  margin-block: 2rem;
+}
+
+.cart .muted {
+  color: var(--color-muted);
+}
+.cart-container {
+  background-color: var(--color-surface);
+  max-width: 600px;
+  padding: 3rem;
+  border-radius: 4px;
+}
+
+.cart-items {
+  font-size: 1.5rem;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 8px;
+  border: 2px solid var(--color-border);
+  background-color: var(--color-surface);
+  padding: 0.5rem 1rem;
+}
+
+.cart-items .cart-item:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.cart-item img {
+  height: 6rem;
+  width: 6rem;
+  object-fit: contain;
+}
+
+.cart-item :is(.inc, .dec) {
+  cursor: pointer;
+  background-color: var(--color-primary);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.cart-item .remove {
+  margin-inline-start: 0.7rem;
+  background-color: transparent;
+}
+
+.cart-item input {
+  text-align: center;
+  width: 4rem;
+  border: none;
+  outline: none;
+}
+
+.cart-item button:disabled {
+  background-color: var(--color-muted);
+  cursor: not-allowed;
+}
+
+.cart :is(#checkout, #clear) {
+  background-color: transparent;
+  padding: 0.7rem 1rem;
+  border-radius: 4px;
+}
+
+.cart #checkout {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.cart #clear {
+  border: 1px solid var(--color-primary);
+}
